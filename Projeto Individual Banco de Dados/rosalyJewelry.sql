@@ -13,21 +13,21 @@ PRIMARY KEY (idproduto)
 ) DEFAULT CHARSET = utf8;
 
 INSERT INTO produtos (idproduto, categoria, nome, preco, novopreco, imagem) VALUES 
-(DEFAULT, 'Aliança', 'Aliança em ouro cravejada', '2500.00', '1900.00', 'images/alianca1.png'),
-(DEFAULT, 'Aliança', 'Aliança em Ouro Rose', '2499.90', '1899.90', 'images/alianca2.png'),
-(DEFAULT, 'Aliança', 'Aliança em Ouro Tradicional', '1500.00', '1290.00', 'images/alianca3.png'),
-(DEFAULT, 'Anel', 'Anel em Prata Cravejado', '1200.00', '1000.99', 'images/anel1.png'),
-(DEFAULT, 'Anel', 'Anel em Prata Realeza', '1500.90', '1399.99', 'images/anel2.jpg'),
-(DEFAULT, 'Anel', 'Anel em Prata Esmeralda', '1790.00', '1590.99', 'images/anel3.png'),
-(DEFAULT, 'Colar', 'Colar em Ouro Lua e Estrelas', '1050.00', '899.99', 'images/colar1.png'),
-(DEFAULT, 'Colar', 'Colar em Prata Girassol', '1000.00', '799.99', 'images/colar2.png'),
-(DEFAULT, 'Colar', 'Colar em Ouro Cravejado Coração', '1700.00', '1499.90', 'images/colar3.png'),
-(DEFAULT, 'Brinco', 'Brinco em Ouro e Prata Rosas', '560.00', '399.99', 'images/brinco1.jpg'),
-(DEFAULT, 'Brinco', 'Brinco em Ouro branco com pedra Corações', '1200.00', '900.90', 'images/brinco2.png'),
-(DEFAULT, 'Brinco', 'Brinco em Prata Cascata', '900.00', '700.99', 'images/brinco3.jpeg'),
-(DEFAULT, 'Pulseira', 'Pulseira em Ouro com pingente', '850.99', '650.99', 'images/pulseira1.png'),
-(DEFAULT, 'Pulseira', 'Pulseira em Ouro Branco com Rubi', '1799.00', '1590.99', 'images/pulseira2.png'),
-(DEFAULT, 'Pulseira', 'Pulseira em Ouro Folhas', '1200.00', '900.99', 'images/pulseira3.png');
+(DEFAULT, 'alianca', 'Aliança em ouro cravejada', '2500.00', '1900.00', 'images/alianca1.png'),
+(DEFAULT, 'alianca', 'Aliança em Ouro Rose', '2499.90', '1899.90', 'images/alianca2.png'),
+(DEFAULT, 'alianca', 'Aliança em Ouro Tradicional', '1500.00', '1290.00', 'images/alianca3.png'),
+(DEFAULT, 'anel', 'Anel em Prata Cravejado', '1200.00', '1000.99', 'images/anel1.png'),
+(DEFAULT, 'anel', 'Anel em Prata Realeza', '1500.90', '1399.99', 'images/anel2.jpg'),
+(DEFAULT, 'anel', 'Anel em Prata Esmeralda', '1790.00', '1590.99', 'images/anel3.png'),
+(DEFAULT, 'colar', 'Colar em Ouro Lua e Estrelas', '1050.00', '899.99', 'images/colar1.png'),
+(DEFAULT, 'colar', 'Colar em Prata Girassol', '1000.00', '799.99', 'images/colar2.png'),
+(DEFAULT, 'colar', 'Colar em Ouro Cravejado Coração', '1700.00', '1499.90', 'images/colar3.png'),
+(DEFAULT, 'brinco', 'Brinco em Ouro e Prata Rosas', '560.00', '399.99', 'images/brinco1.jpg'),
+(DEFAULT, 'brinco', 'Brinco em Ouro branco com pedra Corações', '1200.00', '900.90', 'images/brinco2.png'),
+(DEFAULT, 'brinco', 'Brinco em Prata Cascata', '900.00', '700.99', 'images/brinco3.jpeg'),
+(DEFAULT, 'pulseira', 'Pulseira em Ouro com pingente', '850.99', '650.99', 'images/pulseira1.png'),
+(DEFAULT, 'pulseira', 'Pulseira em Ouro Branco com Rubi', '1799.00', '1590.99', 'images/pulseira2.png'),
+(DEFAULT, 'pulseira', 'Pulseira em Ouro Folhas', '1200.00', '900.99', 'images/pulseira3.png');
 
 SELECT * FROM produtos;
 
