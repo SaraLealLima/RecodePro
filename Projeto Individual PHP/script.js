@@ -30,7 +30,14 @@ window.onload = function () {
         produto.addEventListener('click', function () {      // aplica o EventListener a todos os produtos
             console.log(boxProdutos[i])
             modalContainer.style.visibility = "visible"      // torna o modal visível ao clicar no produto
+            console.log(produto.id)
 
+            let botaoComprar = document.getElementById('btn-comprar')
+            botaoComprar.onclick = function () {
+                window.location.href = "pedido.php?idproduto="+produto.id
+            }
+        
+            
             //Alterando a imagem do modal de acordo com o produto selecionado
             let produtoImagem = produto.getElementsByTagName("img")[0]
             let modalImagem = modalContainer.getElementsByClassName("modal-img")[0]
@@ -52,6 +59,17 @@ window.onload = function () {
             modalNovoPreco.innerHTML = novoPreco.innerHTML
         })
     }
+
+    
+
+
+
+
+
+
+
+
+
     for (i = 0; i < closeBtn.length; i++) {
         let fechar = closeBtn[i]
         fechar.addEventListener('click', function () {            // fecha o modal
@@ -59,3 +77,8 @@ window.onload = function () {
     })
     }
 }
+
+
+// quando clicar no produto, ele abre o modal com os dados desse produto
+// quando clicar no produto, ele também vai pegar o id desse produto e usar para redirecionar o usuário para a pag de produtos
+// quando clicar em comprar

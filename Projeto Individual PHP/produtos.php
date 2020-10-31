@@ -6,21 +6,20 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+
+    <?php 
+        require('connection.php');
+    ?>
+
     <title>Produtos</title>
 </head>
 
 <body>
-    <header>
-        <a href="index.php"><img class="img-logo" src="./images/logo1.png" alt="Rosaly Jewelry"></a>
-        <!-- MENU -->
-        <nav class="menu">
-            <a href="index.php">PÁGINA INICIAL</a>
-            <a href="produtos.php">NOSSOS PRODUTOS</a>
-            <a href="faleConosco.php">FALE CONOSCO</a>
-            <a href="nossasLojas.php">NOSSAS LOJAS</a>
-        </nav>
-        <!-- FIM DO MENU -->
-    </header>
+
+    <?php 
+        include('./components/header.html')
+    ?>
+
 
     <div class="texto-padrao">
     <p id="titulo">NOSSOS PRODUTOS</p>
@@ -44,128 +43,35 @@
     </aside>
 
     <section class="produtos">
-        
-        <div class="box-produto alianca">
-            <img src="./images/alianca1.png" alt="Aliança em ouro cravejada">
-            </br>
-            <p class="nome-produto">Aliança em Ouro Cravejada</p>
-            <hr>
-            <p class="antigo-preco">R$ 2.500,00</p>
-            <p class="novo-preco">R$ 1.900,00</p>
-        </div>
-        <div class="box-produto alianca">
-            <img src="./images/alianca2.png" alt="Aliança em Ouro Rose">
-            </br>
-            <p class="nome-produto">Aliança em Ouro Rose</p>
-            <hr>
-            <p class="antigo-preco">R$ 2.499,90</p>
-            <p class="novo-preco">R$ 1.899,90</p>
-        </div>
-        <div class="box-produto alianca">
-            <img src="./images/alianca3.png" alt="Aliança em Ouro Tradicional">
-            </br>
-            <p class="nome-produto">Aliança em Ouro Tradicional</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.500</p>
-            <p class="novo-preco">R$ 1.290,99</p>
-        </div>
-        <div class="box-produto anel">
-            <img src="./images/anel1.PNG" alt="Anel em Prata Cravejado">
-            </br>
-            <p class="nome-produto">Anel em Prata Cravejado</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.200,00</p>
-            <p class="novo-preco">R$ 1.000,99</p>
-        </div>
-        <div class="box-produto anel">
-            <img src="./images/anel2.jpg" alt="Anel em Prata Realeza">
-            </br>
-            <p class="nome-produto">Anel em Prata Realeza</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.500,90</p>
-            <p class="novo-preco">R$ 1.399,99</p>
-        </div>
-        <div class="box-produto anel">
-            <img src="./images/anel3.png" alt="Anel em Prata Esmeralda">
-            </br>
-            <p class="nome-produto">Anel em Prata Esmeralda</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.790</p>
-            <p class="novo-preco">R$ 1.590,99</p>
-        </div>
-        <div class="box-produto colar">
-            <img src="./images/colar1.PNG" alt="Colar em Ouro Lua e Estrelas">
-            </br>
-            <p class="nome-produto">Colar em Ouro Lua e Estrelas</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.050,00</p>
-            <p class="novo-preco">R$ 899,99</p>
-        </div>
-        <div class="box-produto colar">
-            <img src="./images/colar2.png" alt="Colar em Prata Girassol">
-            </br>
-            <p class="nome-produto">Colar em Prata Girassol</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.000,00</p>
-            <p class="novo-preco">R$ 799,99</p>
-        </div>
-        <div class="box-produto colar">
-            <img src="./images/colar3.png" alt="Colar em Ouro Cravejado Coração">
-            </br>
-            <p class="nome-produto">Colar em Ouro Cravejado Coração</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.700</p>
-            <p class="novo-preco">R$ 1.499,90</p>
-        </div>
-        <div class="box-produto brinco">
-            <img src="./images/brinco1.jpg" alt="Brinco em Ouro e Prata Rosas">
-            </br>
-            <p class="nome-produto">Brinco em Ouro e Prata Rosas</p>
-            <hr>
-            <p class="antigo-preco">R$ 560,00</p>
-            <p class="novo-preco">R$ 399,99</p>
-        </div>
-        <div class="box-produto brinco">
-            <img src="./images/brinco2.PNG" alt="Brinco em Ouro branco com pedra Corações">
-            </br>
-            <p class="nome-produto">Brinco em Ouro branco com pedra Corações</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.200</p>
-            <p class="novo-preco">R$ 900,90</p>
-        </div>
-        <div class="box-produto brinco">
-            <img src="./images/brinco3.jpeg" alt="Brinco em Prata Cascata">
-            </br>
-            <p class="nome-produto">Brinco em Prata Cascata</p>
-            <hr>
-            <p class="antigo-preco">R$ 900,00</p>
-            <p class="novo-preco">R$ 700,99</p>
-        </div>
-        <div class="box-produto pulseira">
-            <img src="./images/pulseira1.PNG" alt="Pulseira em Ouro com pingente">
-            </br>
-            <p class="nome-produto">Pulseira em Ouro com pingente</p>
-            <hr>
-            <p class="antigo-preco">R$ 850,99</p>
-            <p class="novo-preco">R$ 650,99</p>
-        </div>
-        <div class="box-produto pulseira">
-            <img src="./images/pulseira2.PNG" alt="Pulseira em Ouro Branco com Rubi">
-            </br>
-            <p class="nome-produto">Pulseira em Ouro Branco com Rubi</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.799,00</p>
-            <p class="novo-preco">R$ 1.590,99</p>
-        </div>
-        <div class="box-produto pulseira">
-            <img src="./images/pulseira3.PNG" alt="Pulseira em Ouro Folhas">
-            </br>
-            <p class="nome-produto">Pulseira em Ouro Folhas</p>
-            <hr>
-            <p class="antigo-preco">R$ 1.200</p>
-            <p class="novo-preco">R$ 900,99</p>
-        </div>
+
+        <?php
+            $conn->query("set names utf8");
+
+            $sql = "select * from produtos";
+            $result = $conn->query($sql);
+            
+            if($result->num_rows > 0) {
+                while($rows = $result->fetch_assoc()) {
+        ?>
+
+            <div class="box-produto <?php echo $rows["categoria"] ?>" id="<?php echo $rows["idproduto"] ?>" >
+                <img src="<?php echo $rows["imagem"] ?>" alt="<?php echo $rows["nome"] ?>">
+                </br>
+                <p class="nome-produto"><?php echo $rows["nome"] ?></p>
+                <hr>
+                <p class="antigo-preco"><?php echo $rows["preco"] ?></p>
+                <p class="novo-preco"><?php echo $rows["novopreco"] ?></p>
+            </div>
+      
+        <?php
+                }
+            } else {
+                echo "Nenhum produto cadastrado ou encontrado";
+            }
+        ?>
+
     </section>
+    
 
     <div class="modal-container" id="modal-container">
         <div class="modal">
@@ -179,21 +85,14 @@
                 <p class="modal-novo-preco">R$ 1.900,00</p>
     
             <button class="add-btn close">Adicionar ao carrinho</button> 
-            <button class="comprar-btn close">Comprar</button>
+            <button class="comprar-btn" id="btn-comprar">Comprar</button>
             </div>
         </div>
     </div>
 
-    <footer>
-        <img width="150px" src="./images/logo2.png" alt="Rosaly Jewelry Logo">
-        </br></br>
-        <p>FORMAS DE PAGAMENTO ACEITAS</p>
-
-        <p>Aceitamos boletos e os cartões das seguintes bandeiras:</p>
-        <img width="300px" src="./images/formas-de-pagamento.png" alt="Formas de pagamento aceitas">
-        <p class="copyright"> Copyright &copy; Sara Leal Lima, todos os direitos reservados.</p>
-    </footer>
-
+    <?php
+        include('./components/footer.html')
+    ?>
 </body>
 
 </html>

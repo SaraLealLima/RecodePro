@@ -11,21 +11,11 @@
 </head>
 
 <body>
-    <header>
-      <a href="index.php"><img class="img-logo" src="./images/logo1.png" alt="Rosaly Jewelry"></a>
+    
+    <?php
+        include('./components/header.html')
+    ?>
 
-        <!-- MENU -->
-
-        <nav class="menu">
-            <a href="index.php">PÁGINA INICIAL</a>
-            <a href="produtos.php">NOSSOS PRODUTOS</a>
-            <a href="faleConosco.php">FALE CONOSCO</a>
-            <a href="nossasLojas.php">NOSSAS LOJAS</a>
-        </nav>
-
-        <!-- FIM DO MENU -->
-
-    </header>
     <section class="parallax">
         <div class="welcome-text">
             <p>Bem vindo ao site da Rosaly Jewelry.</p>
@@ -45,15 +35,10 @@
         
     </section>
 
-    <footer>
-        <img width="150px" src="./images/logo2.png" alt="Rosaly Jewelry Logo">
-    </br></br>
-        <p>FORMAS DE PAGAMENTO ACEITAS</p>
-    
-        <p>Aceitamos boletos e os cartões das seguintes bandeiras:</p>
-        <img width="300px" src="./images/formas-de-pagamento.png" alt="Formas de pagamento aceitas">
-        <p class="copyright"> Copyright &copy; Sara Leal Lima, todos os direitos reservados.</p>
-    </footer>
+    <?php
+        include('./components/footer.html')
+    ?>
+   
 </body>
 
 </html>
