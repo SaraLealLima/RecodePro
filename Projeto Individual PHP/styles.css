@@ -221,3 +221,35 @@ footer {
 .add-btn:hover, .comprar-btn:hover {
     background-color:#fd73a6;
 }
+
+.formulario-pedido {
+    text-align: center;
+    background-color: white;
+    font-size: 17px;
+    width: 480px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.466);
+    border-radius: 4px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 50px 0px;
+}
+
+.confirmacao-pedido {
+    text-align: center;
+    background-color: white;
+    font-size: 17px;
+    width: 480px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.466);
+    border-radius: 4px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 50px 0px;
+}
+
+.confirmacao-pedido a {
+    color: hotpink;
+}
