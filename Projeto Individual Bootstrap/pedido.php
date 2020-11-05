@@ -52,28 +52,36 @@
 
             <img src="<?php echo $img ?>" alt="Imagem do produto">
 
-            <form action="confirmacao_pedido.php" method="post">
-                <label for="nomeproduto">Nome do produto</label> <br>
-                <input type="text" name="nomeproduto" required value="<?php echo $nome ?>"/>  <br><br>
+            <div class="row justify-content-center">
+                <div class="col-sm-8 col-md-9 col-lg-9">
 
-                <label for="valorunitario">Preço</label> <br>
-                <input type="number" name="valorunitario" required value="<?php echo $novopreco ?>"/> <br><br>
+                    <form action="confirmacao_pedido.php" method="post">
+                        <div class="form-group">
+                            <label for="nomeproduto">Nome do produto</label> <br>
+                            <input class="form-control" type="text" name="nomeproduto" required value="<?php echo $nome ?>"/>
+                            <br><br>
 
-                <label for="quantidade">Quantidade</label> <br>
-                <input type="number" name="quantidade" required value="1"/> <br><br>
+                            <label for="valorunitario">Preço</label> <br>
+                            <input class="form-control" type="number" name="valorunitario" required value="<?php echo $novopreco ?>"/> 
+                            <br><br>
 
-                <label for="nomecliente">Nome do cliente</label> <br>
-                <input type="text" name="nomecliente" required /> <br><br>
+                            <label for="quantidade">Quantidade</label> <br>
+                            <input class="form-control" type="number" name="quantidade" required value="1"/> <br><br>
 
-                <label for="endereco">Endereço</label> <br>
-                <input type="text" name="endereco" required /> <br><br>
-            
-                <label for="telefone">Telefone</label> <br>
-                <input type="tel" name="telefone" required /> <br><br><br>
+                            <label for="nomecliente">Nome do cliente</label> <br>
+                            <input class="form-control" type="text" name="nomecliente" required /> <br><br>
 
-                <button type="submit" class="comprar-btn">Fazer pedido</button>
+                            <label for="endereco">Endereço</label> <br>
+                            <input class="form-control" type="text" name="endereco" required /> <br><br>
+                        
+                            <label for="telefone">Telefone</label> <br>
+                            <input class="form-control" type="tel" name="telefone" required /> <br><br><br>
 
-            </form>
+                            <button type="submit" class="comprar-btn">Fazer pedido</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
         </div>
     </div>

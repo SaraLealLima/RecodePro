@@ -20,7 +20,7 @@
     ?>
 
 
-    <div class="texto-padrao">
+    <div class="texto-padrao container ml-sm-0 ml-md-5 mt-5">
         <p id="titulo">FALE CONOSCO</p>
         <p> Estamos sempre prontos para te atender!</p>
         <p>Nosso telefone para atendimento referente a compras realizadas nas nossas lojas físicas: </br>
@@ -34,11 +34,25 @@
         <p>Para mais praticidade, deixe uma mensagem, sugestão,
             elogio ou dúvidas e seu endereço de e-mail. Nossa equipe responderá assim que possível.</p>
         <form>
-            <label for="email">Seu endereço de e-mail:</label></br>
-            <input type="email" name="email" id="email"></br></br>
-            <label for="message">Sua mensagem:</label></br>
-            <textarea name="messagem" id="message" cols="75" rows=10>Digite aqui...</textarea> </br></br>
-            <button class="add-btn">Enviar</button>
+            <div class=row>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+
+                     <form action="" method="post">
+                        <div class="form-group">
+                            <label for="email">Seu endereço de e-mail:</label>
+                            <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu email"> <br>
+
+                            <label for="mensagem">Digite aqui sua mensagem</label>
+                            <textarea class="form-control" name="mensagem" id="mensagem" rows="4" placeholder="Sua mensagem..."></textarea>
+                        
+                             </br>
+                            <button type="submit" class="add-btn">Enviar</button> </br>
+                        </div>
+                     </form>
+
+                       
+                </div>
+            </div>
         </form>
     </div>
 

@@ -84,7 +84,6 @@ footer {
 
 .texto-padrao {
     font-size: 20px;
-    margin: 60px;
 }
 
 #titulo {
@@ -97,17 +96,11 @@ footer {
     font-size: 19px;
 }
 
-.loja {
-    display: inline-block;
-    margin: 2% 5% 10% 5%;
-}
 
 .categorias {
     display: block;
     margin-left: 60px;
-    width: 20%;
     float: left;
-    height: 2351px;
     padding-left: 15px;
     font-size: 20px;
 }
@@ -126,7 +119,6 @@ footer {
 
 .box-produto {
     display: inline-block;
-    width: 24%;
     text-align: center;
     margin-top: 20px;
     border-radius: 4px;
@@ -169,7 +161,7 @@ footer {
     visibility: hidden;
 }
 
-.modal {
+.modal1 {
     width: 480px;
     height: 550px;
     background-color: white;
